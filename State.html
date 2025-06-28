@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Indian States - EduMap India</title>
+  <style>
+    
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("india.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, navy, rgb(155, 226, 226), navy);
+      color: whitesmoke;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #searchBar {
+      width: 80%;
+      max-width: 500px;
+      margin: 20px auto;
+      display: block;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .state-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .state-card:hover {
+      transform: scale(1.05);
+    }
+
+    .state-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .state-card a {
+      display: inline-block;
+      background: linear-gradient(to right, blue, whitesmoke, darkblue);
+      padding: 10px 20px;
+      margin: 12px 0;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      color: rgb(14, 5, 95);
+    }
+
+    .state-card a:hover {
+      background-color: #0d47a1;
+      color: rgb(214, 211, 236);
+      box-shadow: 0px 5px 15px rgba(8, 238, 242, 0.4);
+      text-shadow: 3px 2px 5px goldenrod;
+      filter: drop-shadow(3px 5px 8px goldenrod);
+    
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Indian States</h1>
+    <p>Welcome to EduMap India – Discover every corner of the country</p>
+  </header>
+
+  <input type="text" id="searchBar" placeholder="Search for a state...">
+
+  <div class="grid-container" id="stateGrid">
+
+    <div class="state-card"><img src="andhra praadesh.jpeg" alt="Andhra Pradesh"><a href="andhra-pradesh.html">Andhra Pradesh</a></div>
+    <div class="state-card"><img src="arunachal-pradesh.jpg" alt="Arunachal Pradesh"><a href="arunachal-pradesh.html">Arunachal Pradesh</a></div>
+    <div class="state-card"><img src="aasam.jpeg" alt="Assam"><a href="assam.html">Assam</a></div>
+    <div class="state-card"><img src="bihar.jpeg" alt="Bihar"><a href="bihar.html">Bihar</a></div>
+    <div class="state-card"><img src="chattisgarh.jpeg" alt="Chhattisgarh"><a href="chhattisgarh.html">Chhattisgarh</a></div>
+    <div class="state-card"><img src="delhi.png" alt="Delhi"><a href="delhi.html">Delhi</a></div>
+    <div class="state-card"><img src="Goa.jpeg" alt="Goa"><a href="goa.html">Goa</a></div>
+    <div class="state-card"><img src="Gujrat.jpeg" alt="Gujarat"><a href="gujarat.html">Gujarat</a></div>
+    <div class="state-card"><img src="hariyana.jpeg" alt="Haryana"><a href="haryana.html">Haryana</a></div>
+    <div class="state-card"><img src="himachal.jpeg" alt="Himachal Pradesh"><a href="himachal-pradesh.html">Himachal Pradesh</a></div>
+    <div class="state-card"><img src="jharkhand.png" alt="Jharkhand"><a href="jharkhand.html">Jharkhand</a></div>
+    <div class="state-card"><img src="kranatka.jpeg" alt="Karnataka"><a href="karnataka.html">Karnataka</a></div>
+    <div class="state-card"><img src="kerla.jpeg" alt="Kerala"><a href="kerala.html">Kerala</a></div>
+    <div class="state-card"><img src="mizoram.jpeg" alt="Mizoram"><a href="mizoram.html">Mizoram</a></div>
+    <div class="state-card"><img src="manipur.jpeg" alt="Manipur"><a href="manipur.html">Manipur</a></div>
+    <div class="state-card"><img src="madhyapradesh.jpeg" alt="Madhya Pradesh"><a href="madhya-pradesh.html">Madhya Pradesh</a></div>
+    <div class="state-card"><img src="maharastra.jpeg" alt="Maharashtra"><a href="maharashtra.html">Maharashtra</a></div>
+    <div class="state-card"><img src="meghalaya.jpeg" alt="Meghalaya"><a href="meghalaya.html">Meghalaya</a></div>
+    <div class="state-card"><img src="nagaland.jpeg" alt="Nagaland"><a href="nagaland.html">Nagaland</a></div>
+    <div class="state-card"><img src="odisa.jpeg" alt="Odisha"><a href="odisha.html">Odisha</a></div>
+    <div class="state-card"><img src="punjab.jpeg" alt="Punjab"><a href="punjab.html">Punjab</a></div>
+    <div class="state-card"><img src="rajasthan.jpeg" alt="Rajasthan"><a href="rajasthan.html">Rajasthan</a></div>
+    <div class="state-card"><img src="sikkim.jpeg" alt="Sikkim"><a href="sikkim.html">Sikkim</a></div>
+    <div class="state-card"><img src="telengana.jpeg" alt="Telangana"><a href="telangana.html">Telangana</a></div>
+    <div class="state-card"><img src="tamilnadu.jpeg" alt="Tamil Nadu"><a href="tamil-nadu.html">Tamil Nadu</a></div>
+    <div class="state-card"><img src="tripura.png" alt="Tripura"><a href="tripura.html">Tripura</a></div>
+    <div class="state-card"><img src="uttrakhand.png" alt="Uttarakhand"><a href="uttrakhand.html">Uttarakhand</a></div>
+    <div class="state-card"><img src="utter pradesh.jpg" alt="Uttar Pradesh"><a href="uttar-pradesh.html">Uttar Pradesh</a></div>
+    <div class="state-card"><img src="westbengole.jpeg" alt="West Bengal"><a href="west-bengal.html">West Bengal</a></div>
+  </div>
+
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const cards = document.querySelectorAll(".state-card");
+
+    searchBar.addEventListener("keyup", function () {
+      const query = searchBar.value.toLowerCase();
+      cards.forEach(card => {
+        const stateName = card.textContent.toLowerCase();
+        card.style.display = stateName.includes(query) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
