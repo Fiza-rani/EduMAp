@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduMap India</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("india.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    nav {
+      padding: 32px;
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      position:sticky;
+      top: 0;
+      /*z-index: 1000;*/
+      box-shadow: 6px 12px 16px black;
+    }
+
+    nav a {
+      color:	#FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: rgb(93, 55, 247);
+      text-decoration: underline double;
+      text-decoration-color: rgb(105, 4, 4);
+      transform: scale(1.1);
+    }
+
+    #home {
+      color: rgb(11, 11, 11);
+      font-size: 30px;
+      text-shadow: 4px 8px 8px blue;
+      letter-spacing: 2px;
+      box-shadow: 6px 12px 16px rgb(0, 0, 0);
+      background: none;
+      text-align: center;
+      padding: 7px;
+      text-decoration: underline;
+      text-decoration-color: rgb(74, 231, 240);
+      
+    }
+
+    .abc {
+      font-size: 30px;
+      color: black;
+      text-shadow: 2px 2px 5px rgb(62, 224, 246);
+      width: 80%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: 120px;
+      
+    
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      margin-top: 30px;
+      margin-left: 550px;
+      padding: 14px 28px;
+      background: linear-gradient(to right, blue, whitesmoke, rgb(78, 2, 2));
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .button:hover {
+      color: rgb(14, 5, 95);
+      box-shadow: 0px 5px 15px rgba(8, 238, 242, 0.4);
+      text-shadow: 3px 2px 5px goldenrod;
+      filter: drop-shadow(3px 5px 8px goldenrod);
+      transform: scale(1.1);
+    }
+
+     
+    #about {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: rgba(0,0,0,0.5);
+      color: #f0f0f0;
+      border-radius: 12px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    #uses {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: rgba(0,0,0,0.5);
+      color: #f0f0f0;
+      border-radius: 12px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <nav style="background-color:	#0A192F";>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="state.html">Visit States</a>
+  </nav>
+  <header id="home" style="background-color:	#f4f8fb">
+    <h1>Welcome to EduMap India</h1>
+  </header>
+  <p class="abc">Explore Indian states, maps, and much more in a smart and simple way.</p>
+
+  <div class="map-container">
+    <img src="wallpaper.jpg" alt="Map of India" style="width: 400px; height: 300px;">
+  </div>
+
+  <button class="button" onclick="window.location.href='state.html'">Visit States</button>
+
+  
+  <div id="about" style="padding: 20px; border-radius: 10px; margin: 20px;">
+  <h2 style="color: rgb(113, 200, 224);">About EduMap India</h2>
+  <p style="font-size: 20px; line-height: 1.6;">
+    <strong>EduMap India</strong> is a smart and student-friendly platform specially designed for students who have completed their 12th standard. This project helps users explore various Indian states and easily discover universities located within them.
+    <br><br>
+    Whether you're looking for government or private universities, checking rankings, or visiting official university websites — EduMap India brings everything together on one clean and simple page.
+    <br><br>
+    Our mission is to make the college selection journey <strong>easy, organized, and stress-free</strong> for every student, even those who are new to technology.
+  </p>
+  </div>
+
+<section id="uses" style="padding: 20px; border-radius: 10px; margin: 20px; ">
+  <h2 style="color: rgb(113,200,224);">Uses of EduMap India</h2>
+  <ul style="font-size: 20px; line-height: 1.6;">
+    <li> Quickly find universities by clicking on any Indian state.</li>
+    <li> Check rankings of both government and private universities.</li>
+    <li> Directly visit official university websites with one click.</li>
+    <li> Explore colleges listed under each university, district-wise.</li>
+    <li> Best for students who want a simple and organized way to search after Class 12.</li>
+  </ul>
+</section>
+
+
+</body>
+</html>
+
+
+  
